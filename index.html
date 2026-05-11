@@ -237,7 +237,7 @@ function doLogin(){
   cu=user;
   document.getElementById("uc").textContent=user.n;
   document.getElementById("ub").style.display="flex";
-  if(localStorage.getItem("quiz_submitted_"+user.e)==="1"){
+  if(localStorage.getItem("quiz_submitted_"+user.e)==="1" && user.e !== "ranbir.manoranjan@spyne.ai"){
     alert("You have already submitted the quiz. Each candidate can only attempt once.");
     document.getElementById("lerr").style.display="block";
     document.getElementById("lerr").textContent="You have already submitted this assessment.";
